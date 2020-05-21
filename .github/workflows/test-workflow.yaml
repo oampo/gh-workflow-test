@@ -7,4 +7,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Echo
-              run: echo "Hello world"
+              run: |
+                  sleep 5
+                  echo "${{github.event.client_payload.id}}"
