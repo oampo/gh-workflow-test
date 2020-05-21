@@ -1,0 +1,10 @@
+on:
+    repository_dispatch:
+        types: [generate-week]
+jobs:
+    echo:
+        name: Echo
+        runs-on: ubuntu-latest
+        steps:
+            - name: Echo
+              run: echo "Hello world"
