@@ -1,6 +1,6 @@
 on:
     repository_dispatch:
-        types: [generate-week]
+        types: [echo]
 jobs:
     echo:
         name: Echo
